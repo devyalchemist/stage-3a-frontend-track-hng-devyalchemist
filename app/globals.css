@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --orange-dark: #D87D4A;
+  --orange-light: #FBAF85;
+  --white-dark: #F1F1F1;
+  --white-light: #FAFAFA;
+  --black-light: #101010;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.modal-btn {
+  background-color: #D87D4A !important;
+  border-radius: 0px !important;
+}
+
+.modal-btn:hover {
+  background-color: #FBAF85 !important;
+}
+
+.modal-link {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-link:hover {
+  color: #D87D4A !important;
+}
+
+.form {
+  padding: 30px 40px !important;
+  border-radius: 8px !important;
+}
+
+.form input {
+  padding: 8px;
+}
+
+.form input:hover {
+  outline: 2px solid #D87D4A !important;
+  border-color: transparent !important;
+}
+
+.form input:focus-within {
+  outline: 2px solid #D87D4A !important;
+  border-color: transparent !important;
+}
+
+
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #D87D4A;
+  /* Change border color of the checked radio */
+  background-color: #D87D4A;
+  /* Change background color of the checked dot */
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #D87D4A !important;
+  box-shadow: 0 0 0 2px rgba(216, 125, 74, 0.2) !important;
+}
+
+@media (max-width: 768px) {
+  .order-modal .ant-modal {
+    top: 10px !important;
+    margin: 0 !important;
+  }
+}
